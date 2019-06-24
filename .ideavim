@@ -1,0 +1,2 @@
+" jjで挿入モードから抜ける設定
+inoremap <silent> jj <ESC>

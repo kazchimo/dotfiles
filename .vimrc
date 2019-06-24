@@ -3,165 +3,84 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Bundle 'VundleVim/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
+" 導入したいプラグインを以下に列挙
 " Plugin '[Github Author]/[Github repo]' の形式で記入
-Bundle 'airblade/vim-gitgutter'
-" tenderカラーテーマ
-Bundle 'jacoborus/tender.vim'
-Bundle 'scrooloose/nerdtree'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'jacoborus/tender.vim'
+Plugin 'scrooloose/nerdtree'
+
 call vundle#end()
-if (has("termguicolors"))
- set termguicolors
-endif
+filetype plugin indent on
+
+" テーマの設定
 syntax enable
 colorscheme tender
-filetype plugin indent on
-"エンコーディング
-"GUI版使ってるなら無効にした方がいいらしいです
-set encoding=utf-8
-scriptencoding utf-8
 
-"カーソル位置表示
-set ruler
-"行番号表示
-set number
-
-"色
-set background=dark
-
-" カーソル行をハイライト
-set cursorline
-
-"シンタックスハイライト
-syntax enable
-
-"オートインデント
-set autoindent
-
-"インデント幅
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
-
-"タブをスペースに変換
-set expandtab
-set smarttab
-
-"ビープ音すべてを無効にする
-set visualbell t_vb=
-
-"長い行の折り返し表示
-set wrap
-
-"検索設定
-"ハイライト
-set hlsearch
-"大文字と小文字を区別しない
-set ignorecase
-"大文字と小文字が混在した検索のみ大文字と小文字を区別する
-set smartcase
-"最後尾になったら先頭に戻る
-set wrapscan
-"置換の時gオプションをデフォルトで有効にする
-set gdefault
-
-
-"不可視文字の設定
-set list
-set listchars=tab:>-,eol:↲,extends:»,precedes:«,nbsp:%
-
-"コマンドラインモードのファイル補完設定
-set wildmode=list:longest,full
-
-"入力中のコマンドを表示
+" setting
+"文字コードをUFT-8に設定
+set fenc=utf-8
+" バックアップファイルを作らない
+set nobackup
+" スワップファイルを作らない
+set noswapfile
+" 編集中のファイルが変更されたら自動で読み直す
+set autoread
+" バッファが編集中でもその他のファイルを開けるように
+set hidden
+" 入力中のコマンドをステータスに表示する
 set showcmd
 
-"クリップボードの共有
-set clipboard=unnamed,autoselect
 
-"カーソル移動で行をまたげるようにする
-set whichwrap=b,s,h,l,<,>,~,[,]
-
-"バックスペースを使いやすく
-set backspace=indent,eol,start
-set nrformats-=octal
-
-set pumheight=10
-
-"対応する括弧に一瞬移動
+" 見た目系
+" 行番号を表示
+set number
+" 行末の1文字先までカーソルを移動できるように
+set virtualedit=onemore
+" インデントはスマートインデント
+set smartindent
+" ビープ音を可視化
+set visualbell
+" 括弧入力時の対応する括弧を表示
 set showmatch
-set matchtime=1
-source $VIMRUNTIME/macros/matchit.vim " Vimの「%」を拡張する
-
-"ウィンドウの最後の行もできるだけ表示
-set display=lastline
-
-"変更中のファイルでも保存しないで他のファイルを表示する
-set hidden
-
-"バックアップファイルを作成しない
-set nobackup
-"バックアップファイルのディレクトリ指定
-set backupdir=$HOME/.vim/backup
-"アンドゥファイルを作成しない
-set noundofile
-"アンドゥファイルのディレクトリ指定
-set undodir=$HOME/.vim/backup
-"スワップファイルを作成しない
-set noswapfile
-
-
-
-""""""""""""""""""""""""""""""
-
-
-
-"カーソル移動
+" ステータスラインを常に表示
+set laststatus=2
+" コマンドラインの補完
+set wildmode=list:longest
+" 折り返し時に表示行単位での移動できるようにする
 nnoremap j gj
 nnoremap k gk
-nnoremap gj j
-nnoremap gk k
-nnoremap <down> gj
-nnoremap <up> gk
-noremap <S-h> ^
-noremap <S-j> }
-noremap <S-k> {
-noremap <S-l> $
+" シンタックスハイライトの有効化
+syntax enable
 
-" jjで挿入モードから抜ける設定
+
+" Tab系
+" 不可視文字を可視化(タブが「▸-」と表示される)
+set list listchars=tab:\▸\-
+" Tab文字を半角スペースにする
+set expandtab
+" 行頭以外のTab文字の表示幅（スペースいくつ分）
+set tabstop=2
+" 行頭でのTab文字の表示幅
+set shiftwidth=2
+
+
+" 検索系
+" 検索文字列が小文字の場合は大文字小文字を区別なく検索する
+set ignorecase
+" 検索文字列に大文字が含まれている場合は区別して検索する
+set smartcase
+" 検索文字列入力時に順次対象文字列にヒットさせる
+set incsearch
+" 検索時に最後まで行ったら最初に戻る
+set wrapscan
+" 検索語をハイライト表示
+set hlsearch
+" ESC連打でハイライト解除
+nmap <Esc><Esc> :nohlsearch<CR><Esc>
+" jjでエスケープ
 inoremap <silent> jj <ESC>
 
-"ノーマルモードのまま改行
-nnoremap <CR> A<CR><ESC>
-"ノーマルモードのままスペース
-nnoremap <space> i<space><esc>
-
-"rだけでリドゥ
-nnoremap r <C-r>
-
-"Yで行末までヤンク
-nnoremap Y y$
-" jjで挿入モードから抜ける設定
-inoremap <silent> jj <ESC>
-"ESCキー2度押しでハイライトの切り替え
-nnoremap <silent><Esc><Esc> :<C-u>set nohlsearch!<CR>
-
-
-"ペースト時に自動インデントで崩れるのを防ぐ
-if &term =~ "xterm"
-    let &t_SI .= "\e[?2004h"
-    let &t_EI .= "\e[?2004l"
-    let &pastetoggle = "\e[201~"
-
-    function XTermPasteBegin(ret)
-        set paste
-        return a:ret
-    endfunction
-
-    inoremap <special> <expr> <Esc>[200~ XTermPasteBegin("")
-endif
-
-
-filetype plugin indent on
-
+" 日本語入力で”っj”と入力してもEnterキーで確定させればインサートモードを抜ける
+inoremap <silent> っj <ESC>

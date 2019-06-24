@@ -1,5 +1,2 @@
-alias mk='touch'
-alias ..='cd ..'
-alias mv='mv -i'
-alias cp='cp -i'
+alias rm='rmtrash'
 

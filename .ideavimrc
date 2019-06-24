@@ -1,0 +1,19 @@
+set cursorline
+set autoindent
+set hlsearch
+set ignorecase
+set smartcase
+set wrapscan
+set gdefault
+set showcmd
+set clipboard=unnamed, autoselect
+set surround
+inoremap <silent> jj <ESC> 
+nnoremap Y y&
+
+
+" 次、前のメソッド定義にジャンプ
+nnoremap [m :<C-u>action MethodUp<CR>
+nnoremap ]m :<C-u>action MethodDown<CR>
+
+source ~/.vimrc
