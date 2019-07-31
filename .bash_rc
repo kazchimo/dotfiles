@@ -1,9 +1,12 @@
 alias rm='rmtrash'
 alias rmgc="git rm -r --cached ."
 alias cop="open ."
+alias sbash="source $HOME/.bash_profile"
+alias pipi="pip install"
 
 # git alias
-alias gc="git clone"
+alias gcl="git clone"
+alias gco="git commit"
 
 function psgre() {
   ps aux | grep $1 | grep -v grep 

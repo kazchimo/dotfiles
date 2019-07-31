@@ -34,6 +34,8 @@ Plugin 'jiangmiao/auto-pairs'
 
 Plugin 'ervandew/supertab'
 
+Plugin 'Lokaltog/vim-easymotion' 
+
 " Plugin 'Shougo/deoplete.nvim'
 " Plugin 'roxma/vim-hug-neovim-rpc'
 " Plugin 'roxma/nvim-yarp'
@@ -50,6 +52,8 @@ let g:airline_theme='jellybeans'
 " deoplete.nvim用
 let g:deoplete#enable_at_startup = 1
 
+" easymotion用の設定
+map <Space> <Plug>(easymotion-s2)
 
 " vim-codefmtの自動フォーマット設定
 augroup autoformat_settings
