@@ -1,2 +1,14 @@
 alias rm='rmtrash'
+alias rmgc="git rm -r --cached ."
+alias cop="open ."
 
+# git alias
+alias gc="git clone"
+
+function psgre() {
+  ps aux | grep $1 | grep -v grep 
+}
+
+function clipcp() {
+  cat $1 | pbcopy
+}

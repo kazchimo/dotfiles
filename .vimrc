@@ -10,9 +10,63 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'jacoborus/tender.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'alvan/vim-closetag' "htmlなどのタグを自動で閉じる
+Plugin 'cohama/lexima.vim' "カッコなどを自動閉じ
+Plugin 'kamykn/spelunker.vim' " スペルチェック 
 
+" コードフォーマッタ
+Plugin 'google/vim-maktaba'
+Plugin 'google/vim-codefmt'
+" Also add Glaive, which is used to configure codefmt's maktaba flags. See
+" `:help :Glaive` for usage.
+Plugin 'google/vim-glaive'
+
+" ypafとの連携
+Plugin 'pignacio/vim-yapf-format'
+
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-commentary'
+
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+Plugin 'jiangmiao/auto-pairs'
+
+Plugin 'ervandew/supertab'
+
+" Plugin 'Shougo/deoplete.nvim'
+" Plugin 'roxma/vim-hug-neovim-rpc'
+" Plugin 'roxma/nvim-yarp'
 call vundle#end()
 filetype plugin indent on
+
+" vim-closinの設定
+let g:closetag_filenames = '*.html,*.xml, *.xhtml,*.phtml'
+let g:closetag_shortcut = '>'
+
+" vim-airlineの設定
+let g:airline_theme='jellybeans'
+
+" deoplete.nvim用
+let g:deoplete#enable_at_startup = 1
+
+
+" vim-codefmtの自動フォーマット設定
+augroup autoformat_settings
+  autocmd FileType bzl AutoFormatBuffer buildifier
+  autocmd FileType c,cpp,proto,javascript AutoFormatBuffer clang-format
+  autocmd FileType dart AutoFormatBuffer dartfmt
+  autocmd FileType go AutoFormatBuffer gofmt
+  autocmd FileType gn AutoFormatBuffer gn
+  autocmd FileType html,css,sass,scss,less,json AutoFormatBuffer js-beautify
+  autocmd FileType java AutoFormatBuffer google-java-format
+  autocmd FileType python AutoFormatBuffer yapf
+  " Alternative: autocmd FileType python AutoFormatBuffer autopep8
+  autocmd FileType vue AutoFormatBuffer prettier
+augroup END
+
+" yapfのpath設定
+let g:yapf_format_yapf_location ="/Users/moriyamakazuki/.pyenv/shims/yapf"
 
 " テーマの設定
 syntax enable
@@ -53,6 +107,16 @@ nnoremap j gj
 nnoremap k gk
 " シンタックスハイライトの有効化
 syntax enable
+
+" カーソル設定
+if has('vim_starting')
+    " 挿入モード時に非点滅の縦棒タイプのカーソル
+    let &t_SI .= "\e[6 q"
+    " ノーマルモード時に非点滅のブロックタイプのカーソル
+    let &t_EI .= "\e[2 q"
+    " 置換モード時に非点滅の下線タイプのカーソル
+    let &t_SR .= "\e[4 q"
+endif
 
 
 " Tab系

@@ -6,7 +6,7 @@ set smartcase
 set wrapscan
 set gdefault
 set showcmd
-set clipboard=unnamed, autoselect
+" set clipboard=unnamed, autoselect
 set surround
 inoremap <silent> jj <ESC> 
 nnoremap Y y&

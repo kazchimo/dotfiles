@@ -12,3 +12,5 @@ fi
 
 # Customize to your needs...
 source /Users/moriyamakazuki/.bash_profile
+
+bindkey -v
