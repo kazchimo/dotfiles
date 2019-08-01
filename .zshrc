@@ -13,4 +13,7 @@ fi
 # Customize to your needs...
 source /Users/moriyamakazuki/.bash_profile
 
+autoload -U promptinit; promptinit
+prompt pure
+
 bindkey -v
