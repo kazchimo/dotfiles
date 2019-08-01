@@ -17,3 +17,6 @@ autoload -U promptinit; promptinit
 prompt pure
 
 bindkey -v
+
+# alias
+alias szsh="source $HOME/.zshrc"
