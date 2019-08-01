@@ -4,6 +4,7 @@ alias cop="open ."
 alias sbash="source $HOME/.bash_profile"
 alias pipi="pip install"
 alias vbash="vim $HOME/.bash_rc"
+alias vvim="vim $HOME/.vimrc"
 
 # git alias
 alias gcl="git clone"
