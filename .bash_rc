@@ -8,6 +8,8 @@ alias pipi="pip install"
 alias gcl="git clone"
 alias gco="git commit"
 alias gchangeremote="git remote set-url origin"
+alias grmc="git rm -r --cached ."
+alias gac="git add . & git commit -m"
 
 function psgre() {
   ps aux | grep $1 | grep -v grep 
