@@ -35,6 +35,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'ervandew/supertab'
 
 Plugin 'Lokaltog/vim-easymotion' 
+Plugin 'tpope/vim-fugitive'
 
 " Plugin 'Shougo/deoplete.nvim'
 " Plugin 'roxma/vim-hug-neovim-rpc'
