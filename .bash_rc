@@ -10,6 +10,11 @@ alias gco="git commit"
 alias gchangeremote="git remote set-url origin"
 alias grmc="git rm -r --cached ."
 alias gac="git add . & git commit -m"
+alias gfe="git fetch"
+alias gad="git add"
+alias gpu="git push"
+alias gdi="git diff"
+alias gbr="git branch"
 
 function psgre() {
   ps aux | grep $1 | grep -v grep 
