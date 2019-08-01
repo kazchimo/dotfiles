@@ -7,6 +7,7 @@ alias pipi="pip install"
 # git alias
 alias gcl="git clone"
 alias gco="git commit"
+alias gchangeremote="git remote set-url origin"
 
 function psgre() {
   ps aux | grep $1 | grep -v grep 
