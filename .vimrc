@@ -17,6 +17,10 @@ Plugin 'kamykn/spelunker.vim' " スペルチェック
 " スクロールをなめらかにする 
 Plugin 'yuttie/comfortable-motion.vim'
 
+" markdownエディット用
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+
 " コードフォーマッタ
 Plugin 'google/vim-maktaba'
 Plugin 'google/vim-codefmt'
