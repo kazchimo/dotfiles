@@ -11,6 +11,7 @@ alias cdev="cd $HOME/development/"
 alias bins="brew install"
 alias g="git"
 alias jn="jupyter notebook"
+alias v="vim"
 
 # dotfiles
 alias cdot="cd $HOME/dotfiles"
