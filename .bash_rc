@@ -8,6 +8,7 @@ alias vvim="vim $HOME/.vimrc"
 alias dc="docker-compose"
 alias cdot="cd $HOME/dotfiles"
 alias ...="cd ../../"
+alias cdev="cd $HOME/development/"
 
 # git alias
 alias gcl="git clone"
