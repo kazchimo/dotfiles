@@ -11,6 +11,7 @@ alias ...="cd ../../"
 alias cdev="cd $HOME/development/"
 alias bins="brew install"
 alias g="git"
+alias jn="jupyter notebook"
 
 # git alias
 alias gcl="git clone"
