@@ -36,3 +36,7 @@ function psgre() {
 function clipcp() {
   cat $1 | pbcopy
 }
+
+function edic() {
+  w3m "http://ejje.weblio.jp/content/$1" | grep "主な"
+}
