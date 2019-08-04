@@ -6,12 +6,14 @@ alias pipi="pip install"
 alias vbash="vim $HOME/.bash_rc"
 alias vvim="vim $HOME/.vimrc"
 alias dc="docker-compose"
-alias cdot="cd $HOME/dotfiles"
 alias ...="cd ../../"
 alias cdev="cd $HOME/development/"
 alias bins="brew install"
 alias g="git"
 alias jn="jupyter notebook"
+
+# dotfiles alias
+alias cdot="cd $HOME/dotfiles"
 
 # git alias
 alias gcl="git clone"
