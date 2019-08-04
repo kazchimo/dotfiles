@@ -14,6 +14,9 @@ Plugin 'alvan/vim-closetag' "htmlなどのタグを自動で閉じる
 Plugin 'cohama/lexima.vim' "カッコなどを自動閉じ
 Plugin 'kamykn/spelunker.vim' " スペルチェック 
 
+" スクロールをなめらかにする 
+Plugin 'yuttie/comfortable-motion.vim'
+
 " コードフォーマッタ
 Plugin 'google/vim-maktaba'
 Plugin 'google/vim-codefmt'
