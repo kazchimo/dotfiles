@@ -9,6 +9,7 @@ alias dc="docker-compose"
 alias cdot="cd $HOME/dotfiles"
 alias ...="cd ../../"
 alias cdev="cd $HOME/development/"
+alias bins="brew install"
 
 # git alias
 alias gcl="git clone"
