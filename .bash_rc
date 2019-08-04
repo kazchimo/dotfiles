@@ -12,8 +12,12 @@ alias bins="brew install"
 alias g="git"
 alias jn="jupyter notebook"
 
-# dotfiles alias
+# dotfiles 
 alias cdot="cd $HOME/dotfiles"
+function dgac() {
+  (cd &HOME/dotfiles && git add . && git commit -m $1)
+}
+alias dgpu="(cdot && gpu)"
 
 # git alias
 alias gcl="git clone"
@@ -33,4 +37,6 @@ function psgre() {
 
 function clipcp() {
   cat $1 | pbcopy
+
+
 }
