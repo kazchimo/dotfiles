@@ -66,7 +66,7 @@ call vundle#end()
 filetype plugin indent on
 
 autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
-autocmd BufNewFile,BufRead *.bash* set filetype=shell
+autocmd BufNewFile,BufRead *.{bash*,zsh*} set filetype=sh
 
 " python syntax
 let g:python_highlight_all = 1
