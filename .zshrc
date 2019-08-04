@@ -13,6 +13,9 @@ fi
 # Customize to your needs...
 source /Users/moriyamakazuki/.bash_profile
 
+# 色を使用
+autoload -Uz colors ; colors
+
 autoload -U promptinit; promptinit
 prompt pure
 
