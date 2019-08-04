@@ -10,6 +10,7 @@ alias cdot="cd $HOME/dotfiles"
 alias ...="cd ../../"
 alias cdev="cd $HOME/development/"
 alias bins="brew install"
+alias g="git"
 
 # git alias
 alias gcl="git clone"
