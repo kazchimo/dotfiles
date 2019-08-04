@@ -21,3 +21,4 @@ bindkey -v
 # alias
 alias szsh="source $HOME/.zshrc"
 alias vzsh="vim $HOME/.zshrc"
+alias -s py="python"
