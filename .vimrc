@@ -14,7 +14,10 @@ Plugin 'alvan/vim-closetag' "htmlなどのタグを自動で閉じる
 Plugin 'cohama/lexima.vim' "カッコなどを自動閉じ
 Plugin 'kamykn/spelunker.vim' " スペルチェック 
 
-" previm
+" vimautoformat
+Plugin 'Chiel92/vim-autoformat'
+
+"previm
 Plugin 'tyru/open-browser.vim'
 Plugin 'kannokanno/previm'
 
