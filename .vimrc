@@ -14,6 +14,10 @@ Plugin 'alvan/vim-closetag' "htmlなどのタグを自動で閉じる
 Plugin 'cohama/lexima.vim' "カッコなどを自動閉じ
 Plugin 'kamykn/spelunker.vim' " スペルチェック 
 
+" previm
+Plugin 'tyru/open-browser.vim'
+Plugin 'kannokanno/previm'
+
 " スクロールをなめらかにする 
 Plugin 'yuttie/comfortable-motion.vim'
 
@@ -52,6 +56,15 @@ Plugin 'scrooloose/syntastic'
 " Plugin 'roxma/nvim-yarp'
 call vundle#end()
 filetype plugin indent on
+
+autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
+
+" Previm
+let g:previm_open_cmd = ''
+nnoremap [previm] <Nop>
+nmap <Space>p [previm]
+nnoremap <silent> [previm]o :<C-u>PrevimOpen<CR>
+nnoremap <silent> [previm]r :call previm#refresh()<CR>
 
 " vim-closinの設定
 let g:closetag_filenames = '*.html,*.xml, *.xhtml,*.phtml'
