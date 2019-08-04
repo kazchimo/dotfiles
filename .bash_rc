@@ -12,7 +12,7 @@ alias bins="brew install"
 alias g="git"
 alias jn="jupyter notebook"
 
-# dotfiles 
+# dotfiles
 alias cdot="cd $HOME/dotfiles"
 alias dgpu="(cdot && gpu)"
 
@@ -29,11 +29,9 @@ alias gdi="git diff"
 alias gbr="git branch"
 
 function psgre() {
-  ps aux | grep $1 | grep -v grep 
+  ps aux | grep $1 | grep -v grep
 }
 
 function clipcp() {
   cat $1 | pbcopy
-
-
 }

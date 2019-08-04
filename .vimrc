@@ -61,6 +61,10 @@ call vundle#end()
 filetype plugin indent on
 
 autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
+autocmd BufNewFile,BufRead *.bash* set filetype=shell
+
+" autoformatの設定
+au BufWrite * :Autoformat
 
 " Previm
 let g:previm_open_cmd = ''
