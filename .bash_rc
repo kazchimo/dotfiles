@@ -28,6 +28,7 @@ alias gad="git add"
 alias gpu="git push"
 alias gdi="git diff"
 alias gbr="git branch"
+alias gst="git status"
 
 function psgre() {
   ps aux | grep $1 | grep -v grep
