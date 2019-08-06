@@ -59,7 +59,7 @@ let g:closetag_filenames = '*.html,*.xml, *.xhtml,*.phtml'
 let g:closetag_shortcut = '>'
 
 " vim-airlineの設定
-let g:airline_theme='jellybeans'
+let g:airline_theme='gruvbox_material'
 
 " deoplete.nvim用
 let g:deoplete#enable_at_startup = 1
