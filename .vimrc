@@ -83,6 +83,9 @@ endif
 let s:cpo_save = &cpo
 set cpo&vim
 
+" clipボード共有の設定
+set clipboard=unnamed,autoselect
+
 syn match pythonOperator "\(+\|=\|-\|\^\|\*\)"
 syn match pythonDelimiter "\(,\|\.\|:\)"
 syn keyword pythonSpecialWord self
