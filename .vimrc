@@ -10,6 +10,10 @@ filetype plugin indent on
 autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
 autocmd BufNewFile,BufRead *.{bash*,zsh*} set filetype=sh
 
+" for gruvbox-material
+set termguicolors
+colorscheme gruvbox-material-hard
+
 " python syntax
 let g:python_highlight_all = 1
 
@@ -92,7 +96,6 @@ let g:yapf_format_yapf_location ="/Users/moriyamakazuki/.pyenv/shims/yapf"
 
 " テーマの設定
 syntax enable
-colorscheme tender
 
 " setting
 "文字コードをUFT-8に設定
