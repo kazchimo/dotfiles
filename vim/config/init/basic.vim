@@ -1,10 +1,15 @@
 set nocompatible
-filetype off
 
+filetype off
 filetype plugin indent on
 
 autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
 autocmd BufNewFile,BufRead *.{bash*,zsh*} set filetype=sh
+
+" 言語を英語に変更
+if has("multi_lang")
+  language C
+endif
 
 " We need nocompatible mode in order to continue lines with backslashes.
 " Original setting will be restored.
