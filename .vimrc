@@ -41,9 +41,6 @@ let b:current_after_syntax = 'python'
 let &cpo = s:cpo_save
 unlet s:cpo_save
 
-" vim-airlineの設定
-let g:airline_theme='gruvbox_material'
-
 " deoplete.nvim用
 let g:deoplete#enable_at_startup = 1
 
