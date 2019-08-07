@@ -41,9 +41,6 @@ let b:current_after_syntax = 'python'
 let &cpo = s:cpo_save
 unlet s:cpo_save
 
-" テーマの設定
-syntax enable
-
 " setting
 "文字コードをUFT-8に設定
 set fenc=utf-8
