@@ -41,10 +41,6 @@ let b:current_after_syntax = 'python'
 let &cpo = s:cpo_save
 unlet s:cpo_save
 
-" vim-closinの設定
-let g:closetag_filenames = '*.html,*.xml, *.xhtml,*.phtml'
-let g:closetag_shortcut = '>'
-
 " vim-airlineの設定
 let g:airline_theme='gruvbox_material'
 
