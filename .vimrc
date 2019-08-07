@@ -41,13 +41,6 @@ let b:current_after_syntax = 'python'
 let &cpo = s:cpo_save
 unlet s:cpo_save
 
-" Previm
-let g:previm_open_cmd = ''
-nnoremap [previm] <Nop>
-nmap <Space>p [previm]
-nnoremap <silent> [previm]o :<C-u>PrevimOpen<CR>
-nnoremap <silent> [previm]r :call previm#refresh()<CR>
-
 " vim-closinの設定
 let g:closetag_filenames = '*.html,*.xml, *.xhtml,*.phtml'
 let g:closetag_shortcut = '>'
