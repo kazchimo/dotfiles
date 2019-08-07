@@ -28,3 +28,5 @@ alias -s sh="zsh"
 autoload -U promptinit; promptinit
 prompt spaceship
 
+# zsh vim key-vind setting
+bindkey -M viins 'jj'  vi-cmd-mode
