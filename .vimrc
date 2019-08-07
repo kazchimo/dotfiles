@@ -42,7 +42,7 @@ let &cpo = s:cpo_save
 unlet s:cpo_save
 
 " deoplete.nvim用
-let g:deoplete#enable_at_startup = 1
+" let g:deoplete#enable_at_startup = 1
 
 " テーマの設定
 syntax enable
