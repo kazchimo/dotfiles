@@ -81,3 +81,9 @@ set incsearch
 set wrapscan
 " 検索語をハイライト表示
 set hlsearch
+
+" pesistent undo setting
+if has('persistent_undo')
+  set undodir=~/.vim/undo
+  set undofile
+endif
