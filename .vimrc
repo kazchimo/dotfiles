@@ -10,17 +10,6 @@ filetype plugin indent on
 autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
 autocmd BufNewFile,BufRead *.{bash*,zsh*} set filetype=sh
 
-" for gruvbox-material
-set termguicolors
-colorscheme gruvbox-material-hard
-
-" python用のハイライト
-if version < 600
-  syntax clear
-elseif exists('b:current_after_syntax')
-  finish
-endif
-
 " We need nocompatible mode in order to continue lines with backslashes.
 " Original setting will be restored.
 let s:cpo_save = &cpo
@@ -28,15 +17,6 @@ set cpo&vim
 
 " clipボード共有の設定
 set clipboard=unnamed,autoselect
-
-syn match pythonOperator "\(+\|=\|-\|\^\|\*\)"
-syn match pythonDelimiter "\(,\|\.\|:\)"
-syn keyword pythonSpecialWord self
-
-hi link pythonSpecialWord    Special
-hi link pythonDelimiter      Special
-
-let b:current_after_syntax = 'python'
 
 let &cpo = s:cpo_save
 unlet s:cpo_save
