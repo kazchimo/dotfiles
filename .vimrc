@@ -14,9 +14,6 @@ autocmd BufNewFile,BufRead *.{bash*,zsh*} set filetype=sh
 set termguicolors
 colorscheme gruvbox-material-hard
 
-" python syntax
-let g:python_highlight_all = 1
-
 " python用のハイライト
 if version < 600
   syntax clear
@@ -43,9 +40,6 @@ let b:current_after_syntax = 'python'
 
 let &cpo = s:cpo_save
 unlet s:cpo_save
-
-" autoformatの設定
-au BufWrite * :Autoformat
 
 " Previm
 let g:previm_open_cmd = ''
