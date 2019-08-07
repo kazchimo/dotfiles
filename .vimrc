@@ -44,9 +44,6 @@ unlet s:cpo_save
 " deoplete.nvim用
 let g:deoplete#enable_at_startup = 1
 
-" easymotion用の設定
-map <Space> <Plug>(easymotion-s2)
-
 " テーマの設定
 syntax enable
 
