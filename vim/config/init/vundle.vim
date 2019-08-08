@@ -7,6 +7,7 @@ Plugin 'sainnhe/gruvbox-material'
 
 " 導入したいプラグインを以下に列挙
 " Plugin '[Github Author]/[Github repo]' の形式で記入
+Plugin 'osyo-manga/vim-over'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'jacoborus/tender.vim'
 Plugin 'scrooloose/nerdtree'
