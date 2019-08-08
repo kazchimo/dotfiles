@@ -1,3 +1,4 @@
+alias vim='mvim -v'
 alias rm='rmtrash'
 alias rmgc="git rm -r --cached ."
 alias cop="open ."
