@@ -3,6 +3,8 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'fatih/vim-go'
+
 Plugin 'sainnhe/gruvbox-material'
 
 " 導入したいプラグインを以下に列挙
