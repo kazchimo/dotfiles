@@ -6,9 +6,9 @@ export CFLAGS="-I$(brew --prefix readline)/include -I$(brew --prefix openssl)/in
 export LDFLAGS="-L$(brew --prefix readline)/lib -L$(brew --prefix openssl)/lib"
 export PYTHON_CONFIGURE_OPTS="--enable-unicode=ucs2"
 export GOPATH=${HOME}/go
-export PATH=$GOPATH/bin:$PATH
+export PATH=$GOPATH/bin:$PATH:$HOME/development/Go
 source ~/.bash_rc
-[[ -d ~/.rbenv  ]] && \
-  export PATH=${HOME}/.rbenv/bin:${PATH} && \
+[[ -d ~/.rbenv ]] &&
+  export PATH=${HOME}/.rbenv/bin:${PATH} &&
   eval "$(rbenv init -)"
-  export CURL_CA_BUNDLE="${HOME}/development/pem/cacert.pem"
+export CURL_CA_BUNDLE="${HOME}/development/pem/cacert.pem"
