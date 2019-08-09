@@ -13,6 +13,7 @@ alias bi="brew install"
 alias g="git"
 alias jn="jupyter notebook"
 alias v="vim"
+alias arp="arp-scan -l --interface en0"
 
 # dotfiles
 alias cdot="cd $HOME/dotfiles"

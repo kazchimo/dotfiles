@@ -14,6 +14,7 @@ color palette-7     90  default bold
 
 color delimiter     90  default
 color main-tracked    99  default bold
+
 # main view の左端にコミットIDを表示する
 set main-view = id date author:email-user commit-title:graph=yes,refs=yes
 
