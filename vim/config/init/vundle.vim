@@ -3,6 +3,7 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
+" go plugin
 Plugin 'fatih/vim-go'
 
 Plugin 'sainnhe/gruvbox-material'
