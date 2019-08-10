@@ -39,6 +39,7 @@ set showcmd
 
 
 " 見た目系
+set cursorline
 " 行番号を表示
 set number
 " 行末の1文字先までカーソルを移動できるように
