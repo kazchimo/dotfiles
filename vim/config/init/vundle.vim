@@ -3,6 +3,10 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
+" note taking plugin
+Plugin 'xolox/vim-notes'
+Plugin 'xolox/vim-misc'
+
 " go plugin
 Plugin 'fatih/vim-go'
 
