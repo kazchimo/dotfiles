@@ -6,7 +6,6 @@ filetype plugin indent on
 autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
 autocmd BufNewFile,BufRead *.{bash*,zsh*} set filetype=sh
 
-" 言語を英語に変更
 if has("multi_lang")
   language C
 endif
@@ -23,6 +22,8 @@ let &cpo = s:cpo_save
 unlet s:cpo_save
 
 " setting
+" column number to window edge
+set scrolloff=2
 "文字コードをUFT-8に設定
 set fenc=utf-8
 " バックアップファイルを作らない
