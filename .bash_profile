@@ -5,7 +5,7 @@ eval "$(pyenv init -)"
 export CFLAGS="-I$(brew --prefix readline)/include -I$(brew --prefix openssl)/include -I$(xcrun --show-sdk-path)/usr/include"
 export LDFLAGS="-L$(brew --prefix readline)/lib -L$(brew --prefix openssl)/lib"
 export PYTHON_CONFIGURE_OPTS="--enable-unicode=ucs2"
-export GOPATH=${HOME}/go:$HOME/development/Go
+export GOPATH=$HOME/development/Go
 export PATH=$GOPATH/bin:$PATH
 source ~/.bash_rc
 [[ -d ~/.rbenv ]] &&
