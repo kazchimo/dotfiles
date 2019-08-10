@@ -14,7 +14,10 @@ alias g="git"
 alias jn="jupyter notebook"
 alias v="vim"
 alias arp="arp-scan -l --interface en0"
+
+# Go
 alias gr="go run"
+alias gg="go get"
 
 # dotfiles
 alias cdot="cd $HOME/dotfiles"
