@@ -8,6 +8,7 @@ alias cdev="cd $HOME/development/"
 alias bi="brew install"
 alias jn="jupyter notebook"
 alias arp="arp-scan -l --interface en0"
+alias b="brew"
 
 
 # functions
