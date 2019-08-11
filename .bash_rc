@@ -1,3 +1,3 @@
 while read -d $'\0' file; do
-  source $HOME/dotfiles/$file
-done < <(find bash_rc -mindepth 1 -maxdepth 1 -print0)
+  source $file
+done < <(find $HOME/dotfiles/bash_rc -mindepth 1 -maxdepth 1 -print0)
