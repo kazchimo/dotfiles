@@ -1,18 +1,14 @@
-alias vim='mvim -v'
 alias rm='rmtrash'
 alias rmgc="git rm -r --cached ."
 alias cop="open ."
 alias sbr="source $HOME/.bash_profile"
 alias pipi="pip install"
-alias vbr="vim $HOME/.bash_rc"
-alias vv="vim $HOME/.vimrc"
 alias dc="docker-compose"
 alias ...="cd ../../"
 alias cdev="cd $HOME/development/"
 alias bi="brew install"
 alias g="git"
 alias jn="jupyter notebook"
-alias v="vim"
 alias arp="arp-scan -l --interface en0"
 
 # Go
