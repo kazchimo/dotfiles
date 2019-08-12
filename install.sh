@@ -33,7 +33,7 @@ if [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
     sudo git clone https://github.com/vim/vim &&
     # sudo git pull && sudo git fetch &&
       cd vim &&
-        make distclean && # if vim was prev installed
+        sudo make distclean && # if vim was prev installed
         sudo ./configure --with-features=huge \
         --enable-rubyinterp \
         --enable-largefile \
