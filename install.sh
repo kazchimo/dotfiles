@@ -31,22 +31,22 @@ if [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
     echo "##cloning vim##" &&
     echo "###############" &&
     sudo git clone https://github.com/vim/vim &&
-    sudo git pull && sudo git fetch &&
-    cd vim/src &&
-    make distclean && # if vim was prev installed
-    ./configure --with-features=huge \
-    --enable-rubyinterp \
-    --enable-largefile \
-    --disable-netbeans \
-    --enable-pythoninterp \
-    --with-python-config-dir=/usr/lib/python2.7/config \
-    --enable-perlinterp \
-    --enable-luainterp \
-    --with-luajit \
-    --enable-fail-if-missing \
-    --with-lua-prefix=/usr/include/lua5.1 \
-    --enable-cscope &&
-    make &&
-    sudo make install)
+    # sudo git pull && sudo git fetch &&
+      cd vim/src &&
+        make distclean && # if vim was prev installed
+        ./configure --with-features=huge \
+        --enable-rubyinterp \
+        --enable-largefile \
+        --disable-netbeans \
+        --enable-pythoninterp \
+        --with-python-config-dir=/usr/lib/python2.7/config \
+        --enable-perlinterp \
+        --enable-luainterp \
+        --with-luajit \
+        --enable-fail-if-missing \
+        --with-lua-prefix=/usr/include/lua5.1 \
+        --enable-cscope &&
+        make &&
+        sudo make install)
 
-    fi
+        fi
