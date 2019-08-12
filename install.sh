@@ -12,3 +12,8 @@ done
 
 # setup Vundle
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+# install vim with python interface
+if [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
+  sudo apt install vim-gnome-py2
+fi
