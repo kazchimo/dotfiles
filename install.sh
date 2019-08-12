@@ -32,9 +32,9 @@ if [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
     echo "###############" &&
     sudo git clone https://github.com/vim/vim &&
     # sudo git pull && sudo git fetch &&
-      cd vim/src &&
+      cd vim &&
         make distclean && # if vim was prev installed
-        ./configure --with-features=huge \
+        sudo ./configure --with-features=huge \
         --enable-rubyinterp \
         --enable-largefile \
         --disable-netbeans \
@@ -46,7 +46,7 @@ if [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
         --enable-fail-if-missing \
         --with-lua-prefix=/usr/include/lua5.1 \
         --enable-cscope &&
-        make &&
+        sudo make &&
         sudo make install)
 
         fi
