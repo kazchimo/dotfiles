@@ -27,6 +27,9 @@ if [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
   sudo cp /usr/include/lua5.1/*.h /usr/include/lua5.1/include/
 
   (cd /opt/ &&
+    echo "###############" &&
+    echo "##cloning vim##" &&
+    echo "###############" &&
     git clone https://github.com/vim/vim &&
     git pull && git fetch &&
     cd vim/src &&
