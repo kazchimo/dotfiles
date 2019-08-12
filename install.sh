@@ -30,8 +30,8 @@ if [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
     echo "###############" &&
     echo "##cloning vim##" &&
     echo "###############" &&
-    git clone https://github.com/vim/vim &&
-    git pull && git fetch &&
+    sudo git clone https://github.com/vim/vim &&
+    sudo git pull && sudo git fetch &&
     cd vim/src &&
     make distclean && # if vim was prev installed
     ./configure --with-features=huge \
