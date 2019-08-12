@@ -4,12 +4,16 @@
   export PIPENV_VENV_IN_PROJECT=true &&
   eval "$(pyenv init -)"
 
-export CFLAGS="-I$(brew --prefix readline)/include -I$(brew --prefix openssl)/include -I$(xcrun --show-sdk-path)/usr/include"
-export LDFLAGS="-L$(brew --prefix readline)/lib -L$(brew --prefix openssl)/lib"
+if type "コマンド" > /dev/null 2>&1; then
+  export CFLAGS="-I$(brew --prefix readline)/include -I$(brew --prefix openssl)/include -I$(xcrun --show-sdk-path)/usr/include"
+  export LDFLAGS="-L$(brew --prefix readline)/lib -L$(brew --prefix openssl)/lib"
+fi
+
 export PYTHON_CONFIGURE_OPTS="--enable-unicode=ucs2"
 export GOPATH=$HOME/development/Go
 export PATH=$GOPATH/bin:$PATH
 source ~/.bash_rc
+
 [[ -d ~/.rbenv ]] &&
   export PATH=${HOME}/.rbenv/bin:${PATH} &&
   eval "$(rbenv init -)"
