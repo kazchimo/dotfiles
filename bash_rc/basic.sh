@@ -1,4 +1,3 @@
-alias rm='rmtrash'
 alias cop="open ."
 alias sbr="source $HOME/.bash_profile"
 alias pipi="pip install"
@@ -10,6 +9,19 @@ alias jn="jupyter notebook"
 alias arp="arp-scan -l --interface en0"
 alias b="brew"
 
+if [ "$(uname)" == 'Darwin' ]; then
+  if ! type rmtrash &> /dev/null; then
+    brew install rmtrash
+  fi
+  alias rm="rmtrash"
+elif [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
+  if ! type trash-put &> /dev/null; then
+    sudo apt install git
+    git clone https://github.com/andreafrancia/trash-cli $HOME
+    (cd $HOME/trash-cli && sudo python setup.py install)
+  fi
+  alias rm=trash-put
+fi
 
 # functions
 function psgre() {
