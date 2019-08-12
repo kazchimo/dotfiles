@@ -19,3 +19,7 @@ source ~/.bash_rc
   eval "$(rbenv init -)"
 
 export CURL_CA_BUNDLE="${HOME}/development/pem/cacert.pem"
+
+mkdir -p $HOME/.vim/colors
+cp $HOME/.vim/bundle/gruvbox-material/colors/gruvbox-material.vim $HOME/.vim/colors
+
