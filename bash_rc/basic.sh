@@ -17,7 +17,7 @@ if [ "$(uname)" == 'Darwin' ]; then
 elif [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
   if ! type trash-put &> /dev/null; then
     sudo apt install git
-    git clone https://github.com/andreafrancia/trash-cli $HOME
+    git clone https://github.com/andreafrancia/trash-cli $HOME/trash-cli
     (cd $HOME/trash-cli && sudo python setup.py install)
   fi
   alias rm=trash-put
