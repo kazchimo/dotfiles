@@ -25,6 +25,9 @@ syntax enable
 set cursorline
 hi clear CursorLine
 
+" fix terminfo italic parse bug
+let &t_ZH="\e[3m"
+let &t_ZR="\e[23m"
 
 if has('vim_starting')
   " 挿入モード時に非点滅の縦棒タイプのカーソル
