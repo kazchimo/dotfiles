@@ -10,7 +10,7 @@ done
 
 # link dotfiles
 echo $window_separator
-echo "${color_code}linking dotfiles..."
+echo -e "${color_code}linking dotfiles..."
 for f in .??*
 do
   [[ "$f" == ".git" ]] && continue
