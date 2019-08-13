@@ -50,6 +50,7 @@ if [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
 
   echo_progress "compiling Vim with Python interface..."
   cd /opt/
+  sudo rm -rf vim
   sudo git clone https://github.com/vim/vim
   # sudo git pull && sudo git fetch &&
   cd vim
