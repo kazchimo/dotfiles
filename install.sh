@@ -9,9 +9,13 @@ do
   window_separator+="="
 done
 
+function echo_progress() {
+  echo -e $color_code$window_separator$default_color_code
+  echo -e $color_code$1$default_color_code
+}
+
 # link dotfiles
-echo -e $color_code$window_separator$default_color_code
-echo -e "${color_code}linking dotfiles...${default_color_code}"
+echo_progress "linking dotfiles..."
 for f in .??*
 do
   [[ "$f" == ".git" ]] && continue
