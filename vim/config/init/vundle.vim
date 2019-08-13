@@ -3,6 +3,8 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'sheerun/vim-polyglot'
+
 " note taking plugin
 Plugin 'xolox/vim-notes'
 Plugin 'xolox/vim-misc'
