@@ -35,7 +35,7 @@ fi
 
 # install vim with python interface
 [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ] &&
-  if vim --version | grep -- "-python" > /dev/null; then
+  if vim --version | grep -- "-python " > /dev/null; then
     echo_progress "removing Vim packages..."
     sudo apt-get remove --purge vim vim-runtime vim-gnome vim-tiny vim-gui-common
 
