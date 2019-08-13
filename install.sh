@@ -9,7 +9,7 @@ do
 done
 
 # link dotfiles
-echo window_separator
+echo $window_separator
 echo "${color_code}linking dotfiles..."
 for f in .??*
 do
