@@ -1,7 +1,7 @@
 #!/bin/bash
 
 color_code="\e[33m"
-window_size=tput cols
+window_size=`tput cols`
 window_separator=""
 for i in `seq 1 ${window_size}`
 do
