@@ -1,6 +1,7 @@
 #!/bin/bash
 
 color_code="\e[33m"
+default_color_code="\e[m"
 window_size=`tput cols`
 window_separator=""
 for i in `seq 1 ${window_size}`
@@ -10,7 +11,7 @@ done
 
 # link dotfiles
 echo $window_separator
-echo -e "${color_code}linking dotfiles..."
+echo -e "${color_code}linking dotfiles...${default_color_code}"
 for f in .??*
 do
   [[ "$f" == ".git" ]] && continue
