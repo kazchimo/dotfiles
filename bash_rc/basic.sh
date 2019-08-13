@@ -20,7 +20,6 @@ elif [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
     git clone https://github.com/andreafrancia/trash-cli $HOME/trash-cli
     (cd $HOME/trash-cli && sudo python setup.py install)
   fi
-  alias rm=trash-put
 fi
 
 # functions
