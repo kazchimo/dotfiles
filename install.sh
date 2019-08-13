@@ -48,7 +48,6 @@ if [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
   sudo mkdir /usr/include/lua5.1/include
   sudo cp /usr/include/lua5.1/*.h /usr/include/lua5.1/include/
 
-  echo_progress "compiling Vim with Python interface..."
   cd /opt/
   if [ ! -d vim ]; then
     echo_progress "cloling Vim github repo..."
