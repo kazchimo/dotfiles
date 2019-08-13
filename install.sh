@@ -7,7 +7,7 @@ do
   [[ "$f" == ".style.yapf" ]] && continue
 
   echo $f
-  ln -s $HOME/dotfiles/$f $HOME/$f
+  ln -s -f $HOME/dotfiles/$f $HOME/$f
 done
 
 # setup Vundle
