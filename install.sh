@@ -10,7 +10,7 @@ do
 done
 
 # link dotfiles
-echo $color_code$window_separator$default_color_code
+echo -e $color_code$window_separator$default_color_code
 echo -e "${color_code}linking dotfiles...${default_color_code}"
 for f in .??*
 do
