@@ -72,8 +72,8 @@ if [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
     --with-lua-prefix=/usr/include/lua5.1 \
     --enable-cscope
 
-  echo_progress "executing make..."
+  echo_progress "executing make Vim with Python interface..."
   sudo make
-  echo_progress "executing make installing"
+  echo_progress "executing make installing Vim with Python interface"
   sudo make install
     fi
