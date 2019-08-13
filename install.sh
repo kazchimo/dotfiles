@@ -13,7 +13,6 @@ function echo_progress() {
   done
 
   echo -e $color_code$window_separator$default_color_code
-  echo -e $color_code$1$default_color_code
 }
 
 # link dotfiles
