@@ -23,7 +23,7 @@ do
   [[ "$f" == ".DS_Store" ]] && continue
   [[ "$f" == ".style.yapf" ]] && continue
 
-  echo $f
+  echo "${f} linked"
   ln -s -f $HOME/dotfiles/$f $HOME/$f
 done
 
