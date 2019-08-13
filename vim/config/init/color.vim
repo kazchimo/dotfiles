@@ -20,3 +20,7 @@ let b:current_after_syntax = 'python'
 
 " シンタックスハイライトの有効化
 syntax enable
+
+" hilight row number
+set cursorline
+hi clear CursorLine
