@@ -72,7 +72,9 @@ if [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
     --enable-fail-if-missing \
     --with-lua-prefix=/usr/include/lua5.1 \
     --enable-cscope
-      sudo make
-      sudo make install
 
+  echo_progress "executing make..."
+  sudo make
+  echo_progress "executing make installing"
+  sudo make install
     fi
