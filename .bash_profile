@@ -21,5 +21,5 @@ source ~/.bash_rc
 export CURL_CA_BUNDLE="${HOME}/development/pem/cacert.pem"
 
 mkdir -p $HOME/.vim/colors
-cp -y $HOME/.vim/bundle/gruvbox-material/colors/gruvbox-material-hard.vim $HOME/.vim/colors
+cp -f $HOME/.vim/bundle/gruvbox-material/colors/gruvbox-material-hard.vim $HOME/.vim/colors
 
