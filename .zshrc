@@ -22,6 +22,19 @@ autoload -U promptinit
 promptinit
 prompt spaceship
 
+# ls color setting
+autoload -U compinit
+compinit
+
+export LSCOLORS=exfxcxdxbxegedabagacad
+export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
+
+alias ls="ls -GF"
+alias gls="gls --color"
+
+zstyle ':completion:*' list-colors 'di=34' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'cd=43;34'
+
+
 # set spaceship loading order
 SPACESHIP_PROMPT_ORDER=(user host dir git node exec_time line_sep jobs exit_code char)
 
