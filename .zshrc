@@ -17,7 +17,9 @@ source /Users/moriyamakazuki/.bash_profile
 autoload -Uz colors
 colors
 
+# zsh vim key-vind setting
 bindkey -v
+bindkey -M viins 'jj' vi-cmd-mode
 
 # alias
 alias szr="source $HOME/.zshrc"
@@ -33,5 +35,3 @@ prompt spaceship
 # set spaceship loading order
 SPACESHIP_PROMPT_ORDER=(user host dir git node exec_time line_sep jobs exit_code char)
 
-# zsh vim key-vind setting
-bindkey -M viins 'jj' vi-cmd-mode
