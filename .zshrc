@@ -3,6 +3,8 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # Customize to your needs...
 source /Users/moriyamakazuki/.bash_profile
 
+source $HOME/.zplugin/bin/zplugin.zsh
+
 # 色を使用
 autoload -Uz colors
 colors
