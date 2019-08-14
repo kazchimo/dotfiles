@@ -64,3 +64,10 @@ zplugin load docker/compose
 zplugin ice as"program" pick"$ZPFX/bin/git-*" make"PREFIX=$ZPFX"
 zplugin light tj/git-extras
 
+# easyly cd gitroot
+zplugin light "mollifier/cd-gitroot"
+
+# enchance cd
+zplugin light "b4b4r07/enhancd"
+
+zplugin load "zsh-users/zsh-syntax-highlighting"
