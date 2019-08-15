@@ -73,3 +73,5 @@ zplugin light "mollifier/cd-gitroot"
 zplugin light "b4b4r07/enhancd"
 
 zplugin load "zsh-users/zsh-syntax-highlighting"
+
+zplugin load "djui/alias-tips"
