@@ -1,7 +1,7 @@
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # Customize to your needs...
-source /Users/moriyamakazuki/.bash_profile
+source $HOME/.bash_profile
 
 source $HOME/.zplugin/bin/zplugin.zsh
 
