@@ -92,7 +92,6 @@ fi
 
     echo_progress "executing make Vim with Python interface..."
     sudo make
-    echo_progress "executing make installing Vim with Python interface..."
     echo_progress "executing make install Vim with Python interface..."
     sudo make install
     cd $HOME/dotfiles
@@ -107,4 +106,13 @@ if !(type tig > /dev/null 2>&1); then
   cd $HOME/tig
   make prefix=/usr/local
   sudo make install prefix=/usr/local
+fi
+
+# install zplugin
+if !(type zplugin > /dev/null 2>&1); then
+  if [ ! -d $HOME/.zplugin/bin ]; then
+    echo_progress "installing zplugin..."
+    mkdir -p $HOME/.zplugin
+    git clone https://github.com/zdharma/zplugin.git ~/.zplugin/bin
+  fi
 fi
