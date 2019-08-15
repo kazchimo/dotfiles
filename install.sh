@@ -122,3 +122,5 @@ if !(type zplugin > /dev/null 2>&1); then
     git clone https://github.com/zdharma/zplugin.git ~/.zplugin/bin
   fi
 fi
+
+zsh
