@@ -76,3 +76,5 @@ zplugin load "djui/alias-tips"
 
 zplugin light zdharma/fast-syntax-highlighting
 
+zplugin load "Tarrasch/zsh-bd"
+
