@@ -87,6 +87,6 @@ if [ ! "$?" -eq 0 ]; then
     git clone git://github.com/jonas/tig.git
   fi
   cd $HOME/tig
-  make
-  make install
+  make prefix=/usr/local
+  make install prefix=/usr/local
 fi
