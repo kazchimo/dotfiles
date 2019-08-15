@@ -88,5 +88,5 @@ if [ ! "$?" -eq 0 ]; then
   fi
   cd $HOME/tig
   make prefix=/usr/local
-  make install prefix=/usr/local
+  sudo make install prefix=/usr/local
 fi
