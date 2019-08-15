@@ -20,6 +20,7 @@ alias -s py="python"
 alias -s sh="zsh"
 
 # Set Spaceship ZSH as a prompt
+zplugin light denysdovhan/spaceship-prompt
 autoload -U promptinit
 promptinit
 prompt spaceship
