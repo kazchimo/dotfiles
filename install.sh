@@ -75,6 +75,7 @@ fi
     echo_progress "executing make Vim with Python interface..."
     sudo make
     echo_progress "executing make installing Vim with Python interface..."
+    echo_progress "executing make install Vim with Python interface..."
     sudo make install
     cd $HOME/dotfiles
       fi
