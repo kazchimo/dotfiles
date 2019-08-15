@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 function echo_progress() {
   color_code="\e[33m"
   default_color_code="\e[m"
@@ -77,4 +76,17 @@ fi
     sudo make
     echo_progress "executing make installing Vim with Python interface..."
     sudo make install
+    cd $HOME/dotfiles
       fi
+
+# install tig
+echo_progress "installing tig..."
+tig > /dev/null 2>&1
+if [ "$?" -eq 0 ]; then
+  if [ ! -d $HOME/tig ]; then
+    git clone git://github.com/jonas/tig.git
+  fi
+  cd $HOME/tig
+  make
+  make install
+fi
