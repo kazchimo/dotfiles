@@ -72,6 +72,7 @@ zplugin light "mollifier/cd-gitroot"
 # enchance cd
 zplugin light "b4b4r07/enhancd"
 
-zplugin load "zsh-users/zsh-syntax-highlighting"
-
 zplugin load "djui/alias-tips"
+
+zplugin light zdharma/fast-syntax-highlighting
+
