@@ -108,6 +108,12 @@ if !(type tig > /dev/null 2>&1); then
   sudo make install prefix=/usr/local
 fi
 
+# install zsh
+if !(type zsh > /dev/null 2>&1); then
+  echo_progress "installing zsh..."
+  sudo apt-get -y install zsh
+fi
+
 # install zplugin
 if !(type zplugin > /dev/null 2>&1); then
   if [ ! -d $HOME/.zplugin/bin ]; then
