@@ -3,6 +3,9 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
+"auto completion for python
+Plugin 'davidhalter/jedi-vim'
+
 Plugin 'sheerun/vim-polyglot'
 
 " note taking plugin
