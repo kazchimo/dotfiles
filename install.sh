@@ -80,9 +80,9 @@ fi
       fi
 
 # install tig
-echo_progress "installing tig..."
 tig > /dev/null 2>&1
-if [ "$?" -eq 0 ]; then
+if [ ! "$?" -eq 0 ]; then
+  echo_progress "installing tig..."
   if [ ! -d $HOME/tig ]; then
     git clone git://github.com/jonas/tig.git
   fi
