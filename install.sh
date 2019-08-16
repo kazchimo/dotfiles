@@ -32,6 +32,9 @@ fi
 # change git default editor
 git config --global core.editor "vim"
 
+# store the git credential
+git config credential.helper store
+
 # link dotfiles
 echo_progress "linking dotfiles..."
 for f in .??*
