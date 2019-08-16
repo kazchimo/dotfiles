@@ -24,4 +24,5 @@ mkdir -p $HOME/.vim/colors
 cp -f $HOME/.vim/bundle/gruvbox-material/colors/gruvbox-material-hard.vim $HOME/.vim/colors
 
 pokemonsay hello
+figlet -f larry3d KAZCHIMO SHELL
 
