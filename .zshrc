@@ -24,6 +24,8 @@ zplugin light denysdovhan/spaceship-prompt
 autoload -U promptinit
 promptinit
 prompt spaceship
+# set spaceship loading order
+SPACESHIP_PROMPT_ORDER=(user host dir git node exec_time line_sep jobs exit_code char)
 
 # ls color setting
 autoload -U compinit
@@ -36,10 +38,6 @@ alias ls="ls -GF"
 alias gls="gls --color"
 
 zstyle ':completion:*' list-colors 'di=34' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'cd=43;34'
-
-
-# set spaceship loading order
-SPACESHIP_PROMPT_ORDER=(user host dir git node exec_time line_sep jobs exit_code char)
 
 # Two regular plugins loaded without tracking.
 zplugin light zsh-users/zsh-autosuggestions
