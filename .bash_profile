@@ -25,5 +25,6 @@ cp -f $HOME/.vim/bundle/gruvbox-material/colors/gruvbox-material-hard.vim $HOME/
 
 (sleep 5; echo "") | cmatrix -s
 fortune | pokemonsay
-figlet kazchimo shell
+figlet -f starwars kazchim shell
+
 
