@@ -23,9 +23,9 @@ export CURL_CA_BUNDLE="${HOME}/development/pem/cacert.pem"
 mkdir -p $HOME/.vim/colors
 cp -f $HOME/.vim/bundle/gruvbox-material/colors/gruvbox-material-hard.vim $HOME/.vim/colors
 
-(sleep 5; echo "") | cmatrix -s # comment out this line if it bothers
+(sleep 3; echo "") | cmatrix -s # comment out this line if it bothers
 
 fortune | pokemonsay
-figlet -f starwars kazchim shell
+figlet kazchimo shell
 
 
