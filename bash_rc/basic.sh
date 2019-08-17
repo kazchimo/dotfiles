@@ -9,6 +9,7 @@ alias jn="jupyter notebook"
 alias arp="arp-scan -l --interface en0"
 alias b="brew"
 alias lg="lazygit"
+alias la="ls -a"
 
 if [ "$(uname)" = 'Darwin' ]; then
   if ! type rmtrash &> /dev/null; then
