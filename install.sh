@@ -1,5 +1,7 @@
 #!/bin/bash
 install/link_dotriles.sh
+install/git.sh
+install/vundle.sh
 
 # install vim with python interface
 [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ] &&
