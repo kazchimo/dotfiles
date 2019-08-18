@@ -1,3 +1,5 @@
+# functions used on install.sh
+
 function echo_progress() {
   color_code="\e[33m"
   default_color_code="\e[m"
