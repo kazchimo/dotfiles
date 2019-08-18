@@ -18,6 +18,8 @@ alias szr="source $HOME/.zshrc"
 alias vzr="vim $HOME/.zshrc"
 alias -s py="python"
 alias -s sh="zsh"
+alias ls="ls -GF"
+alias gls="gls --color"
 
 # Set Spaceship ZSH as a prompt
 zplugin light denysdovhan/spaceship-prompt
@@ -34,10 +36,15 @@ compinit
 export LSCOLORS=exfxcxdxbxegedabagacad
 export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
 
-alias ls="ls -GF"
-alias gls="gls --color"
-
 zstyle ':completion:*' list-colors 'di=34' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'cd=43;34'
+
+# case insensitive completion
+# https://qiita.com/watertight/items/2454f3e9e43ef647eb6b
+zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}'
+zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}'
+zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}' '+m:{[:upper:]}={[:lower:]}'
+zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}'
+zstyle ':completion:*' matcher-list '' 'm:{[:lower:]}={[:upper:]}' '+m:{[:upper:]}={[:lower:]}'
 
 # Two regular plugins loaded without tracking.
 zplugin light zsh-users/zsh-autosuggestions
