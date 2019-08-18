@@ -20,12 +20,6 @@ git config --global core.editor "vim"
 # store the git credential
 git config credential.helper store
 
-# setup Vundle
-if [ ! -d $HOME/.vim/bundle/Vundle.vim ]; then
-  echo_progress "installing Vundle..."
-  git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-fi
-
 # install vim with python interface
 [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ] &&
   if vim --version | grep -- "-python " > /dev/null; then
