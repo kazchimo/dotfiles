@@ -14,12 +14,6 @@ function echo_progress() {
   echo -e $color_code$window_separator$default_color_code
 }
 
-# change git default editor
-git config --global core.editor "vim"
-
-# store the git credential
-git config credential.helper store
-
 # install vim with python interface
 [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ] &&
   if vim --version | grep -- "-python " > /dev/null; then

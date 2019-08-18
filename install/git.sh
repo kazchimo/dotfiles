@@ -12,3 +12,9 @@ if [ ! $? = 0 ]; then
   read git_user_name
   git config --global user.name $git_user_name
 fi
+
+# change git default editor
+git config --global core.editor "vim"
+
+# store the git credential
+git config credential.helper store
