@@ -1,7 +1,7 @@
 #!/bin/bash
 install/make.sh
 install/vim.sh
-install/link_dotriles.sh
+install/link_dotfiles.sh
 install/git.sh
 install/vundle.sh
 install/tig.sh
