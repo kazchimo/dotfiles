@@ -1,4 +1,5 @@
 #!/bin/bash
+install/make.sh
 install/vim.sh
 install/link_dotriles.sh
 install/git.sh
