@@ -1,5 +1,4 @@
 #!/bin/bash
-echo_progress "linking dotfiles..."
 install/link_dotriles.sh
 
 # install vim with python interface
