@@ -14,6 +14,9 @@ function echo_progress() {
   echo -e $color_code$window_separator$default_color_code
 }
 
+echo_progress "linking dotfiles..."
+install/link_dotriles.sh
+
 # install vim with python interface
 [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ] &&
   if vim --version | grep -- "-python " > /dev/null; then

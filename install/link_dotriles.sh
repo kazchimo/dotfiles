@@ -1,4 +1,3 @@
-echo_progress "linking dotfiles..."
 for f in .??*
 do
   [[ "$f" == ".git" ]] && continue
