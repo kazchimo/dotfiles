@@ -20,18 +20,6 @@ git config --global core.editor "vim"
 # store the git credential
 git config credential.helper store
 
-# link dotfiles
-echo_progress "linking dotfiles..."
-for f in .??*
-do
-  [[ "$f" == ".git" ]] && continue
-  [[ "$f" == ".DS_Store" ]] && continue
-  [[ "$f" == ".style.yapf" ]] && continue
-
-  echo "${f} linked"
-  ln -s -f $HOME/dotfiles/$f $HOME/$f
-done
-
 # setup Vundle
 if [ ! -d $HOME/.vim/bundle/Vundle.vim ]; then
   echo_progress "installing Vundle..."
