@@ -1,10 +1,10 @@
 #!/bin/bash
-install/make.sh
-install/vim.sh
-install/link_dotfiles.sh
-install/git.sh
-install/vundle.sh
-install/tig.sh
-install/zsh.sh
+$HOME/dotfiles/install/make.sh
+$HOME/dotfiles/install/vim.sh
+$HOME/dotfiles/install/link_dotfiles.sh
+$HOME/dotfiles/install/git.sh
+$HOME/dotfiles/install/vundle.sh
+$HOME/dotfiles/install/tig.sh
+$HOME/dotfiles/install/zsh.sh
 
 zsh
