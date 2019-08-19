@@ -70,8 +70,7 @@ Plugin 'ervandew/supertab'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'tpope/vim-fugitive'
 
-" シンタックスチェック
-Plugin 'scrooloose/syntastic'
+Plugin 'w0rp/ale'
 
 call vundle#end()
 
