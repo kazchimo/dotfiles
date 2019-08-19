@@ -3,6 +3,8 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'nathanaelkane/vim-indent-guides'
+
 Plugin 'junegunn/goyo.vim'
 
 "auto completion for python
