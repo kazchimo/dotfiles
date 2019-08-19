@@ -1,3 +1,5 @@
+source $HOME/dotfiles/funcs/installing.sh
+
 if !(type "pokemonsay" > /dev/null 2>&1); then
   if [ "$(uname)" == 'Darwin' ]; then
     # Mac
