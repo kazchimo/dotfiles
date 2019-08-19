@@ -13,6 +13,7 @@ alias b="brew"
 alias lg="lazygit"
 alias la="ls -a"
 alias greq="pip freeze > requirements.txt" # generate requirements.txt
+alias l="ls"
 
 if [ "$(uname)" = 'Darwin' ]; then
   if ! type rmtrash &> /dev/null; then
