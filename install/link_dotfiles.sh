@@ -1,4 +1,4 @@
-source ../funcs/installing.sh
+source $HOME/dotfiles/funcs/installing.sh
 
 echo_progress "linking dotfiles..."
 for f in .??*

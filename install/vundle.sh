@@ -1,4 +1,4 @@
-source ../funcs/installing.sh
+source $HOME/dotfiles/funcs/installing.sh
 
 if [ ! -d $HOME/.vim/bundle/Vundle.vim ]; then
   echo_progress "installing Vundle..."

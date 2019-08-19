@@ -1,4 +1,4 @@
-source ../funcs/installing.sh
+source $HOME/dotfiles/funcs/installing.sh
 
 if !(type "tig" > /dev/null 2>&1); then
   echo_progress "installing tig..."

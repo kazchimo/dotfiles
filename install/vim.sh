@@ -1,4 +1,4 @@
-source ../funcs/installing.sh
+source $HOME/dotfiles/funcs/installing.sh
 
 # install vim with python interface
 [ "$(expr substr $(uname -s) 1 5)" = 'Linux' ] &&

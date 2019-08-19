@@ -1,4 +1,4 @@
-source ../funcs/installing.sh
+source $HOME/dotfiles/funcs/installing.sh
 
 # install zsh
 if !(type zsh > /dev/null 2>&1); then
