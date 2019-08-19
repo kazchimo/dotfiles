@@ -3,6 +3,8 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'kien/rainbow_parentheses.vim'
+
 Plugin 'nathanaelkane/vim-indent-guides'
 
 Plugin 'junegunn/goyo.vim'
