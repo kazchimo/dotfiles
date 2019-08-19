@@ -3,6 +3,9 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
+" require ripgrep
+Plugin 'wincent/ferret'
+
 Plugin 'kien/rainbow_parentheses.vim'
 
 Plugin 'nathanaelkane/vim-indent-guides'
