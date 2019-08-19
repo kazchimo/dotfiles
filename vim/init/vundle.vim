@@ -69,8 +69,7 @@ Plugin 'pignacio/vim-yapf-format'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
 
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+Plugin 'itchyny/lightline.vim'
 
 Plugin 'jiangmiao/auto-pairs'
 

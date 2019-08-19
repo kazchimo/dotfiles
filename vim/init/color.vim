@@ -1,6 +1,7 @@
 " for gruvbox-material
 set termguicolors
 colorscheme gruvbox-material-hard
+let g:lightline = {'colorscheme' : 'gruvbox_material'}
 
 " python用のハイライト
 if version < 600
