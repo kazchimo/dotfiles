@@ -11,7 +11,7 @@ fi
 
 export PYTHON_CONFIGURE_OPTS="--enable-unicode=ucs2"
 export GOPATH=$HOME/development/Go
-export PATH=$GOPATH/bin:$PATH:/usr/local/bin
+export PATH=$GOPATH/bin:$PATH:/usr/local/bin:$HOME/bin
 source ~/.bash_rc
 
 [[ -d ~/.rbenv ]] &&
