@@ -6,5 +6,6 @@ bash $HOME/dotfiles/install/git.sh
 bash $HOME/dotfiles/install/vundle.sh
 bash $HOME/dotfiles/install/tig.sh
 bash $HOME/dotfiles/install/zsh.sh
+bash $HOME/dotfiles/install/pokemonsay.sh
 
 zsh
