@@ -3,6 +3,8 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'junegunn/goyo.vim'
+
 "auto completion for python
 Plugin 'davidhalter/jedi-vim'
 
