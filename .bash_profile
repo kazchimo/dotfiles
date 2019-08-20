@@ -4,7 +4,7 @@
   export PIPENV_VENV_IN_PROJECT=true &&
   eval "$(pyenv init -)"
 
-if type "コマンド" > /dev/null 2>&1; then
+if type "brew" > /dev/null 2>&1; then
   export CFLAGS="-I$(brew --prefix readline)/include -I$(brew --prefix openssl)/include -I$(xcrun --show-sdk-path)/usr/include"
   export LDFLAGS="-L$(brew --prefix readline)/lib -L$(brew --prefix openssl)/lib"
 fi
