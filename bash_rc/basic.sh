@@ -15,6 +15,7 @@ alias la="ls -a"
 alias greq="pip freeze > requirements.txt" # generate requirements.txt
 alias l="ls"
 alias ptp="ptpython --vi"
+alias dtig="(cd ${HOME}/dotfiles; tig)"
 
 if [ "$(uname)" = 'Darwin' ]; then
   if ! type rmtrash &> /dev/null; then
