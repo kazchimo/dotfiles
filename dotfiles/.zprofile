@@ -1,2 +1,4 @@
-source ~/.bash_rc
+source ~/.zshrc
+
+export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 

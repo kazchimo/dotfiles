@@ -1,31 +1,15 @@
 alias la="ls --color -a"
 alias l="ls --color"
 alias v="vim"
-alias pspy="ps ax | grep py"
 alias tf="tail -f"
-alias vm="bindkey -v && bindkey 'jj' vi-cmd-mode"
-alias ctlst="systemctl status"
-alias vwpaspl="sudo vim /etc/wpa_supplicant/wpa_supplicant.conf"
-alias ifconfig="ip addr show"
-alias sd="sudo"
-alias sdrb="sudo reboot"
 alias tl="tail -n"
-alias pkf="pkill -f"
-alias pkfn="pkill -f ngrok"
-alias pkfro="pkill -f RasOperation/main"
-alias dropup="/home/pi/RasOperation/sh/operator_use_bash/dropbox_uploader.sh upload"
-alias mac="cat "$(find /sys/devices/ -name wlan0)"/address" # display mac address
 alias szr="source ~/.zshrc"
-alias gsini="git submodule update --init --recursive"
-alias killpy="kill $(pspy)"
-alias jctl="journalctl -f -u"
-alias fixzh="rm ~/.zsh_history" # fix corrupt zsh history file
-alias setting="cat ~/genkan_setting.json"
-alias psa="ps aux"
-alias upd="(cd ~/raspi-bash; git pull; source ~/.zshrc)"
-alias updr="(cd ~/RasOperation; git pull)"
+alias lg="lazygit"
 
 # Set up the prompt
+
+bindkey -v
+bindkey "jj" vi-cmd-mode
 
 autoload -Uz promptinit
 promptinit
@@ -52,7 +36,6 @@ zstyle ':completion:*' group-name ''
 zstyle ':completion:*' menu select=2
 eval "$(dircolors -b)"
 
-source ~/.bash_profile
 source ~/.zplug/init.zsh
 
 # docker alias
