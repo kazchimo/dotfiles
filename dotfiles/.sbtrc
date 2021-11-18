@@ -1,0 +1,11 @@
+alias cd=project
+alias ls=projects
+alias c=compile
+alias t=test
+alias r=reload
+alias tc=test:compile
+alias to=testOnly
+alias tq=testQuick
+alias bin=universal:packageBin
+alias fmt=;scalafmt;test:scalafmt;scalafmtSbt
+
