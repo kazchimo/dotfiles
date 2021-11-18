@@ -5,6 +5,8 @@ alias tf="tail -f"
 alias tl="tail -n"
 alias szr="source ~/.zshrc"
 alias lg="lazygit"
+alias vzrc="vim ~/.zshrc"
+alias bi="brew install"
 
 # Set up the prompt
 
