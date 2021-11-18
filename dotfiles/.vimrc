@@ -30,7 +30,8 @@ set autoread
 set hidden
 " 入力中のコマンドをステータスに表示する
 set showcmd
-
+" クリップボードの共有
+set clipboard+=unnamed
 
 " 見た目系
 " 行番号を表示
