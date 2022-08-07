@@ -8,6 +8,9 @@ alias lg="lazygit"
 alias vzrc="vim ~/.zshrc"
 alias bi="brew install"
 
+# source terrafomr aliases
+[ -f ~/.terraform_aliases ] && source ~/.terraform_aliases
+
 # Set up the prompt
 
 bindkey -v
